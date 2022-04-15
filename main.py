@@ -32,11 +32,6 @@ at_location = input_email.index("@")
 username    = input_email[:at_location]
 domain      = input_email[at_location + 1:]
 
-print(f"{Clr.RED}Email:\t\t{input_email}")
-print(f"{Clr.PINK}Username:\t{username}")
-print(f"{Clr.BLUE}Domain:\t\t{' ' * len(username) + ' '}{domain}")
-print(Clr.RS, end="")
-
 box_line    = '•-' + '-' * 6 + 2 * ('-' * 4) + '-' * len(input_email) + '-•'
 #          "| "    + "Email:"+ 2 * "\t"      + len(email)             + " |"
 print(f"""
